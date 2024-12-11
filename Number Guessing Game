@@ -1,6 +1,6 @@
 import random
 #we need to import random to use random range
-#random range gives a random value in the given range of input
+#randrange() gives a random value in the given range of input
 random_val=random.randrange(1000)
 noc=10 
 #noofchances=log2(upper-lower+1)
