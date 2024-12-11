@@ -1,0 +1,27 @@
+import random
+#we need to import random to use random range
+#random range gives a random value in the given range of input
+random_val=random.randrange(1000)
+noc=10 
+#noofchances=log2(upper-lower+1)
+print("HII welcome to the game")
+print("you have a total of 10 chances to guess the number")
+print("you need to find the number which is in the range of 1 to 1000 in 10 chances")
+n=0
+//n represents no=umber of chances you have used
+while(n<noc):
+    user_ip=int(input("Enter your Guess"))
+    n+=1
+    if(user_ip==random_val):
+        print("Hurray!!!")
+        print("super")
+        print("You find the number in",n,"chances")
+        print("You can visit again in free time.")
+        break
+    elif(user_ip>random_val):
+        print("your guess value is max than the  value to be find")
+    else:
+        print("your guess value is min than the value to be find")
+if(n==noc):
+    print("You didn't guess the number in minimum number of chances.")
+    print("Don't worry.Better luck next time")
